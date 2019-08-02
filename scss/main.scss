@@ -4,42 +4,64 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    @include backgroundConfig('https://i.postimg.cc/x1N0h6F6/adults-band-concert-988595.jpg');
     color: #fff;
 }
 
-.keys{
+.container {
+    @include backgroundConfig('https://i.postimg.cc/kXYpjXyW/background.jpg');
     min-height: 100vh;
-    @include flexCentering;
-    // margin-top: 40vh;
-    .key{
-        height: 100px;
-        width: 100px;
-        margin: 50px;
-        background: rgba(darkgray,0.5);
-        border: 3px solid black;
+    h2{
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 100px;
+        font-family: 'Saira Stencil One', cursive;
+        background: -webkit-linear-gradient(#8360c3, #2ebf91);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    button {
+            text-align: center;
+            width: 100px;
+            height: 30px;
+            padding: 20px;
+            background: #000;
+            color: #fff;
+            border: 2px solid #fff;
+    }
+    
+    .keys{
+        height: 100vh;
         @include flexCentering;
-        flex-direction: column;
-        font-weight: bold;
-        text-transform: capitalize;
-        transition: all 0.07s ease;
-
-        .sound-icon{
-            width: 70px;
-
+        .key{
+            height: 100px;
+            width: 100px;
+            margin: 50px;
+            background: rgba(darkgray,0.7);
+            border: 3px solid black;
+            @include flexCentering;
+            flex-direction: column;
+            font-weight: bold;
+            text-transform: capitalize;
+            transition: all 0.07s ease;
+    
+            .sound-icon{
+                width: 70px;
+            }
+        }
+    
+        kbd{
+            font-size: 40px;
+        }
+    
+        .playing{
+            transform: scale(1.1);
+            border-color: blue;
+            box-shadow: 0 0 10px blue;
         }
     }
-
-    kbd{
-        font-size: 40px;
-    }
-
-    .playing{
-        transform: scale(1.1);
-        border-color: blue;
-        box-shadow: 0 0 10px blue;
-    }
 }
+
+

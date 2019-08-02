@@ -4,51 +4,63 @@
 <head>
   <meta charset="UTF-8">
   <title>JS Drum Kit</title>
+  <!-- CSS Link -->
   <link rel="stylesheet" href="css/main.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
-
-  <div class="keys">
-    <div data-key="65" class="key">
-        <img src="https://i.postimg.cc/N0Xxzwcp/gesture-clap-512.png" alt="hihat" class="sound-icon">
-    </div>
-    <div data-key="83" class="key">
-        <img src="https://i.postimg.cc/05WHb5b6/hihat-512.png" alt="hihat" class="sound-icon">
-    </div>
-    <div data-key="68" class="key">
-      <img src="https://i.postimg.cc/0QHh0sdZ/drum-icon-17.png" alt="hihat" class="sound-icon">
-    </div>
-    <div data-key="70" class="key">
-      <img src="https://i.postimg.cc/xT7TTwwv/1454350.png" alt="hihat" class="sound-icon">
-    </div>
-    <div data-key="71" class="key">
-        <img src="https://i.postimg.cc/zBXVRn0K/Blast-petrol-512.png" alt="hihat" class="sound-icon">
-    </div>
-    <div data-key="72" class="key">
-        <img src="https://i.postimg.cc/cLhK19c0/135430-200.png" alt="hihat" class="sound-icon">
-    </div>
-    <div data-key="74" class="key">
-        <img src="https://i.postimg.cc/4NFqCZDg/73773-200.png" alt="hihat" class="sound-icon">
-    </div>
-    <div data-key="75" class="key">
-        <img src="https://i.postimg.cc/L8pCFXxG/tom.png" alt="hihat" class="sound-icon">
-    </div>
-    <div data-key="76" class="key">
-        <img src="https://i.postimg.cc/vHdLcK5V/metronome.png" alt="hihat" class="sound-icon">
+  <div class="container">
+    <h2>Online Drum Kit</h2>
+    <div class="keys">
+      <div data-key-up="49" class="key">
+        <img src="https://i.postimg.cc/0QHh0sdZ/drum-icon-17.png" alt="bassdrum" class="sound-icon">
+      </div>
+      <div data-key-up="50" class="key">
+        <img src="https://i.postimg.cc/05WHb5b6/hihat-512.png" alt="hithat" class="sound-icon">
+      </div>
+      <div data-key-up="51" class="key">
+        <img src="https://i.postimg.cc/xT7TTwwv/1454350.png" alt="openhat" class="sound-icon">
+      </div>
+      <div data-key-up="52" class="key">
+        <img src="https://i.postimg.cc/cLhK19c0/135430-200.png" alt="ride" class="sound-icon">
+      </div>
+      <div data-key-up="53" class="key">
+        <img src="https://i.postimg.cc/4NFqCZDg/73773-200.png" alt="snare" class="sound-icon">
+      </div>
+      <div data-key-up="54" class="key">
+        <img src="https://i.postimg.cc/L8pCFXxG/tom.png" alt="tom" class="sound-icon">
+      </div>
+      <div data-key-up="55" class="key">
+        <img src="https://i.postimg.cc/zBXVRn0K/Blast-petrol-512.png" alt="boom" class="sound-icon">
+      </div>
+      <div data-key-up="56" class="key">
+        <img src="https://i.postimg.cc/N0Xxzwcp/gesture-clap-512.png" alt="clap" class="sound-icon">
+      </div>
+      <div data-key-up="57" class="key">
+        <img src="https://i.postimg.cc/vHdLcK5V/metronome.png" alt="metronome" class="sound-icon">
+      </div>
     </div>
   </div>
 
-  <audio data-key="65" src="sounds/clap.wav"></audio>
-  <audio data-key="83" src="sounds/hihat.wav"></audio>
-  <audio data-key="68" src="sounds/kick.wav"></audio>
-  <audio data-key="70" src="sounds/openhat.wav"></audio>
-  <audio data-key="71" src="sounds/boom.wav"></audio>
-  <audio data-key="72" src="sounds/ride.wav"></audio>
-  <audio data-key="74" src="sounds/snare.wav"></audio>
-  <audio data-key="75" src="sounds/tom.wav"></audio>
-  <audio data-key="76" src="sounds/tink.wav"></audio>
+  <audio data-key-up="49" src="sounds/bassdrum.wav"></audio>
+  <audio data-key-up="50" src="sounds/hihat.wav"></audio>
+  <audio data-key-up="51" src="sounds/openhat.wav"></audio>
+  <audio data-key-up="52" src="sounds/ride.wav"></audio>
+  <audio data-key-up="53" src="sounds/snare.wav"></audio>
+  <audio data-key-up="54" src="sounds/tom.wav"></audio>
+  <audio data-key-up="55" src="sounds/boom.wav"></audio>
+  <audio data-key-up="56" src="sounds/clap.wav"></audio>
+  <audio data-key-up="57" src="sounds/metronome.wav"></audio>
+
+
+  <!-- Modal -->
+  <!-- <div class="types-modal bg-modal">
+    <div class="modal-content">
+    
+    </div>
+  </div> -->
 
   <script src="js/main.js"></script>
 
