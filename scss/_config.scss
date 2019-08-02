@@ -1,0 +1,12 @@
+@mixin backgroundConfig($url) {
+    background: url($url);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@mixin flexCentering(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

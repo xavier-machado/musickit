@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background: url("https://i.postimg.cc/x1N0h6F6/adults-band-concert-988595.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff; }
+
+.keys {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .keys .key {
+    height: 100px;
+    width: 100px;
+    margin: 50px;
+    background: rgba(169, 169, 169, 0.5);
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+    text-transform: capitalize;
+    transition: all 0.07s ease; }
+    .keys .key .sound-icon {
+      width: 70px; }
+  .keys kbd {
+    font-size: 40px; }
+  .keys .playing {
+    transform: scale(1.1);
+    border-color: blue;
+    box-shadow: 0 0 10px blue; }

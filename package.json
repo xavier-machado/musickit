@@ -1,0 +1,14 @@
+{
+  "name": "musickit",
+  "version": "1.0.0",
+  "description": "Music Kit",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "Hugo Machado",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
